@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="wstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+</head>
+<body>
+    
+    <div class="full-page">
+        <div class="nav-bar">
+            <img src="icons/Quiz.png">
+            <div class="menu-right">
+                <span onClick="myFunction()">&#9776;</span>
+                <ul id="menu">
+                   <li>About Us</li>    
+                   <li>Contact</li>    
+                   <li><button class="started" type="button" onclick="location.href='index.html'">Started</button></li>    
+                   <li><button  onclick="logout()" id="logout" class="logout" type="button">Log Out</button></li>   
+                </ul>
+            </div>
+            <video autoplay muted loop id="bg-video">
+               <source src="icons/bgvid.mp4" type="video/mp4">
+            </video>
+            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">QUIZ TIME</h1><br>
+            <h2 class="animate__animated animate__backInUp animate__delay-1s">ARE YOU READY TO SHOW YOUR SKILLS...</h2>
+        
+            
+            
+        </div> 
+        <div class="CS">
+            <div><img class="CS_img" src="icons/data-science.png"></div>
+       
+        <div class="CS_text">
+            <p>A computer network is a set of computers sharing resources located on or provided by network nodes. 
+                The computers use common communication protocols over digital interconnections to communicate with each other.<br> 
+                These interconnections are made up of telecommunication network technologies that may be arranged in a variety of network topologies.
+            </p>
+        </div>
+        </div>
+        <div class="vertical"></div>
+        
+        <div class="quiz-btn">
+           <button type="button" class="btn1" onclick="location.href='quiz.html'">COMPUTER NETWORKS QUIZ</button>
+        </div>
+
+        <div class="CS">
+        <div><img class="CS_img" src="icons/monitoring.png"></div>
+
+        <div class="CS_text1">
+            <p>Software engineering is an engineering branch associated with development of software product using well-defined scientific principles, methods and procedures.
+                The outcome of software engineering is an efficient and reliable software product.
+                Software project management has wider scope than software engineering process as it involves communication, pre and post delivery support etc.
+            </p>
+        </div>
+        </div>
+        <div class="vertical1"></div>
+
+        <div class="quiz-btn">
+           <button type="button" class="btn2" onclick="location.href='quiz(1).html'">SOFTWARE ENGINEERING QUIZ</button>
+        </div>
+        <div class="CS">
+        <div><img class="CS_img" src="icons/python.png"></div>
+
+        <div class="CS_text2">
+            <p>Python is a high-level, general-purpose and a very popular programming language. 
+                Python programming language is being used in web development, Machine Learning applications, along with all cutting edge technology in Software Industry. 
+                Python Programming is very well suited for Beginners, also for experienced programmers with other programming languages like C++ and Java.
+            </p>
+        </div>
+        </div>
+        <div class="vertical2"></div>
+
+        <div class="quiz-btn">
+           <button type="button" class="btn3" onclick="location.href='quiz(2).html'">PYTHON PROGRAMMING QUIZ</button>
+        </div>
+        <div class="CS">
+        <div><img class="CS_img" src="icons/brain.png"></div>
+        <div class="CS_text3">
+            <p>Artificial Intelligence (AI), also known as machine intelligence, is a branch of computer science that focuses on 
+                building and managing technology that can learn to autonomously make decisions and carry out actions on behalf of a
+                human being.AI is not a single technology. It is an umbrella term that includes any type of software or hardware component that supports machine learning.
+            </p>
+        </div>
+        </div>
+        <div class="vertical3"></div>
+
+        <div class="quiz-btn">
+           <button type="button" class="btn4" onclick="location.href='quiz(3).html'">ARTIFICIAL INTELLIGENCE QUIZ</button>
+        </div>
+        <div class="CS">
+        <div class="CS_img"><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/fqrjldna.json"
+                trigger="loop"
+                style="width:500px;height:500px">
+            </lord-icon></div>
+        <div class="CS_text4">
+            <p>Digital electronics is the concept of Digital computers.
+                A good understanding of the core concepts of computer is required to understand the concept of digital electronics better.
+                Digital electronics, digital circuits, and digital technology are electronics that are operated on digital signals. 
+                Digital techniques are much easier for getting the electronic device.
+            </p>
+        </div>
+        </div>
+        <div class="vertical4"></div>
+
+        <div class="quiz-btn">
+           <button type="button" class="btn5" onclick="location.href='quiz(4).html'">DIGITAL ELECTRONICS QUIZ</button>
+        </div>  
+        
+    </div>  
+   
+   <script>
+       function myFunction(){
+          var x = document.getElementById("menu"); 
+           
+           if(x.style.display == "block")
+           {
+               x.style.display = "none";
+           }
+           else{
+               x.style.display = "block";
+           }
+       }
+    </script>
+    
+    <script src="web.js"></script>
+
+    
+</body>
+</html>

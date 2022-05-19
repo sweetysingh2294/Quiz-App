@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#bg-video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.nav-bar{
+    background: #8dc4df00;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 0 0 10px 10px;
+}
+.nav-bar img{
+    height: 70px;
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+}
+
+.menu-right{
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+ul li:hover{
+    color: rgb(41, 230, 20)
+}
+ul li button{
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 20px;
+    width: 100px;
+    text-transform: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+.started{
+   text-transform: uppercase;
+   font-weight: 600;
+   background-color: rgba(58, 58, 123, 0.105);
+   border: 1px rgba(58, 58, 123, 0.087);
+   border-radius: 50px;
+   height: 30px;
+   font-family: 'Nunito', sans-serif;
+   transition: background 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+.started:hover{
+    background-color: rgb(0, 179, 255);
+    color: whitesmoke;
+   
+}
+.logout{
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: rgba(137, 67, 67, 0.105);
+    height: 30px;
+    border: 1px rgba(137, 67, 67, 0.63);
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+
+}
+.logout:hover{
+    background-color: rgb(237, 59, 59);
+    color: white;
+   
+}
+h1{
+    font-size: 11rem;
+    position: relative;
+    font-weight: 50;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    font-family: 'Bungee Shade', cursive;
+    cursor: default;
+    background: linear-gradient(to right, #020600 0%, #020218 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h2{
+   
+    font-size: 35px;
+    text-align: center;
+    color: rgb(247, 236, 236);
+    font-family: 'Amarante', cursive;
+    cursor: default;
+    text-shadow: 2px 5px 5px black;
+    
+}
+.CS_img{
+    margin-top: 9rem;
+    margin-left: 8rem;
+    margin-bottom: 6rem;
+}
+.vertical{
+    border-left: 4px solid rgba(252, 255, 252, 0.644);
+    border-radius: 50px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 52rem;
+    top: 0;
+}
+.CS{
+    display: flex;
+}
+
+.CS_text{
+    font-size: 26px;
+    font-family: 'DM Mono', monospace;
+    position: absolute;
+    text-align: justify;
+    right: 10rem;
+    margin-top: 12rem;
+    margin-left: 50rem;
+}
+
+.quiz-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    backdrop-filter: blur(8px);
+    
+}
+
+.btn1{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    height: 300px;
+    display: block;
+    width: 100%;
+    border: 15px #15e5e862;
+    border-radius: 10px;
+    background-color: #15e5e862;
+    padding: 14px 28px;
+    font-size: 40px;
+    cursor: pointer;
+    letter-spacing: normal;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.484);
+    transition: background-color 1s ease-in-out, border 1s ease-in-out, letter-spacing 1s;
+}
+.btn1:hover{
+    background-color: rgba(127, 255, 212, 0.541);
+    border: 15px solid rgba(5, 23, 71, 0.623);
+    cursor: pointer;
+    letter-spacing: 25px;
+}
+.vertical1{
+    border-left: 4px solid rgba(252, 255, 252, 0.644);
+    border-radius: 50px;
+    height: 520px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 116rem;
+    top: 0;
+}
+.CS_text1{
+    font-size: 26px;
+    font-family: 'DM Mono', monospace;
+    position: absolute;
+    text-align: justify;
+    right: 10rem;
+    margin-top: 9rem;
+    margin-left: 50rem;
+}
+
+.btn2{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    height: 300px;
+    display: block;
+    width: 100%;
+    border: 15px #e815b362;
+    border-radius: 10px;
+    background-color: #e815b362;
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: normal;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.484);
+    transition: background-color 1s ease, border 1s ease-in-out, letter-spacing 1s;
+}
+.btn2:hover{
+    background-color: rgba(246, 107, 237, 0.626);
+    border: 15px solid #4f04316e;
+    cursor: pointer;
+    letter-spacing: 25px;
+}
+.vertical2{
+    border-left: 4px solid rgba(252, 255, 252, 0.644);
+    border-radius: 50px;
+    height: 520px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 182rem;
+    top: 0;
+}
+.CS_text2{
+    font-size: 26px;
+    font-family: 'DM Mono', monospace;
+    position: absolute;
+    text-align: justify;
+    right: 10rem;
+    margin-top: 9rem;
+    margin-left: 50rem;
+}
+
+
+.btn3{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    height: 300px;
+    display: block;
+    width: 100%;
+    border: 15px  #0b52087f;
+    border-radius: 10px;
+    background-color: #759b747f;
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: normal;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.484);
+    transition: background-color 1s ease, border 1s ease-in-out, letter-spacing 1s;
+}
+.btn3:hover{
+    background-color: rgba(85, 234, 87, 0.653);
+    border: 15px solid rgba(8, 73, 8, 0.737);
+    cursor: pointer;
+    letter-spacing: 25px;
+}
+.vertical3{
+    border-left: 4px solid rgba(252, 255, 252, 0.644);
+    border-radius: 50px;
+    height: 525px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 248rem;
+    top: 0;
+}
+.CS_text3{
+    font-size: 26px;
+    font-family: 'DM Mono', monospace;
+    position: absolute;
+    text-align: justify;
+    right: 10rem;
+    margin-top: 9rem;
+    margin-left: 50rem;
+}
+.btn4{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    height: 300px;
+    display: block;
+    width: 100%;
+    border: 15px #cbc81662;
+    border-radius: 10px;
+    background-color: #cbc81662;
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: normal;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.484);
+    transition: background-color 1s ease, border 1s ease-in-out, letter-spacing 1s;
+}
+.btn4:hover{
+    background-color: rgba(233, 240, 134, 0.664);
+    border: 15px solid rgb(83, 60, 11);
+    cursor: pointer;
+    letter-spacing: 25px;
+}
+.vertical4{
+    border-left: 4px solid rgba(252, 255, 252, 0.644);
+    border-radius: 50px;
+    height: 528px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 314rem;
+    top: 0;
+}
+.CS_text4{
+    font-size: 26px;
+    font-family: 'DM Mono', monospace;
+    position: absolute;
+    text-align: justify;
+    right: 10rem;
+    margin-top: 9rem;
+    margin-left: 50rem;
+}
+
+.btn5{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 4rem;
+    height: 300px;
+    display: block;
+    width: 100%;
+    border: 15px #e8152e62;
+    border-radius: 10px;
+    background-color: #e8152e62;
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: normal;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.484);
+    transition: background-color 1s ease, border 1s ease-in-out, letter-spacing 1s;
+}
+.btn5:hover{
+    background-color: rgba(238, 69, 97, 0.639);
+    border: 15px solid rgb(42, 10, 10);
+    cursor: pointer;
+    letter-spacing: 25px;
+}
+    
+span{
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+    
+@media only screen and (max-width: 700px){
+    span
+    {
+        display: block;
+    }
+    ul li{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
